@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>American Screw · El acero que sostiene a Chile — Opción 1 · Forja</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Black&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --navy:#0B1425;--navy2:#131F38;--navy3:#1B2A4A;
+  --red:#EA282D;--steel:#8B97AC;--paper:#EDF0F5;--white:#fff;
+  --fd:'Archivo Black',sans-serif;--fb:'Archivo',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--fb);background:var(--navy);color:var(--steel);line-height:1.7;font-size:1rem;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--fd);color:var(--white);line-height:1;letter-spacing:-.01em;text-transform:uppercase}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+::selection{background:rgba(234,40,45,.4);color:#fff}
+
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:16px clamp(20px,4vw,50px);transition:background .3s,box-shadow .3s}
+nav.sc{background:rgba(11,20,37,.92);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(255,255,255,.06)}
+nav .lg{display:flex;align-items:center;gap:12px}
+nav .lg img{height:44px}
+nav .lg span{font-size:.68rem;font-weight:700;letter-spacing:3px;color:var(--white);text-transform:uppercase}
+nav .cta{font-size:.8rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#fff;background:var(--red);padding:12px 26px;border-radius:100px;transition:.3s}
+nav .cta:hover{background:#fff;color:var(--navy)}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;padding:0 clamp(20px,4vw,50px) clamp(50px,8vh,90px);isolation:isolate}
+.hero::before{content:'';position:absolute;inset:0;background:url('img/hero-perno.jpg') center/cover no-repeat;z-index:-2;animation:heroz 14s ease-out forwards}
+@keyframes heroz{from{transform:scale(1.12)}to{transform:scale(1)}}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,20,37,.55) 0%,rgba(11,20,37,.15) 40%,rgba(11,20,37,.92) 100%);z-index:-1}
+.hero-in{max-width:1200px;width:100%;margin:0 auto}
+.kick{display:inline-flex;align-items:center;gap:12px;font-size:.72rem;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#fff;margin-bottom:26px}
+.kick::before{content:'';width:36px;height:2px;background:var(--red)}
+.hero h1{font-size:clamp(2.7rem,9vw,7.2rem);max-width:13ch}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero p{max-width:520px;margin-top:26px;font-size:1.08rem;color:#C6CEDC}
+.hero .row{display:flex;flex-wrap:wrap;align-items:center;gap:26px;margin-top:38px}
+.bt{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:.88rem;letter-spacing:1px;text-transform:uppercase;color:#fff;background:var(--red);padding:17px 36px;border-radius:100px;transition:.3s}
+.bt:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(234,40,45,.4)}
+.bt.o{background:transparent;border:2px solid rgba(255,255,255,.35)}
+.bt.o:hover{border-color:#fff;box-shadow:none}
+.cue{position:absolute;bottom:28px;right:clamp(20px,4vw,50px);font-size:.66rem;letter-spacing:3px;text-transform:uppercase;color:#93A0B7;writing-mode:vertical-rl;display:flex;align-items:center;gap:10px}
+.cue::after{content:'';width:1px;height:52px;background:linear-gradient(180deg,var(--red),transparent);animation:cue 1.8s ease-in-out infinite}
+@keyframes cue{0%,100%{transform:scaleY(1);opacity:1}50%{transform:scaleY(.55);opacity:.4}}
+
+/* cinta stats */
+.cinta{border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08);overflow:hidden;padding:22px 0;background:var(--navy)}
+.cinta .track{display:flex;gap:70px;width:max-content;animation:marq 30s linear infinite}
+.cinta .it{display:flex;align-items:baseline;gap:14px;white-space:nowrap}
+.cinta .it b{font-family:var(--fd);font-size:1.6rem;color:#fff}
+.cinta .it span{font-size:.78rem;letter-spacing:2px;text-transform:uppercase;color:var(--steel)}
+.cinta .it i{color:var(--red);font-style:normal;font-size:1.2rem}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* capítulos */
+.caps{padding:clamp(70px,10vw,130px) 0 20px}
+.caps-head{max-width:1200px;margin:0 auto clamp(40px,6vw,80px);padding:0 clamp(20px,4vw,50px)}
+.caps-head h2{font-size:clamp(2rem,5vw,3.6rem);max-width:16ch}
+.caps-head p{max-width:560px;margin-top:18px}
+.cap{position:relative;min-height:88svh;display:flex;align-items:flex-end;margin:0 0 clamp(50px,7vw,100px);isolation:isolate;overflow:hidden}
+.cap:nth-child(odd of .cap){border-radius:0 clamp(70px,16vw,260px) 0 0}
+.cap:nth-child(even of .cap){border-radius:clamp(70px,16vw,260px) 0 0 0}
+.cap .bg{position:absolute;inset:0;z-index:-2;background-size:cover;background-position:center;transform:scale(1.06);transition:transform 1.2s ease}
+.cap:hover .bg{transform:scale(1.01)}
+.cap::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,20,37,.25),rgba(11,20,37,.9) 78%);z-index:-1}
+.cap-in{width:100%;max-width:1200px;margin:0 auto;padding:clamp(30px,5vw,60px) clamp(20px,4vw,50px);display:flex;flex-wrap:wrap;align-items:flex-end;gap:30px 60px}
+.cap .n{font-family:var(--fd);font-size:clamp(4rem,12vw,9rem);color:transparent;-webkit-text-stroke:2px rgba(255,255,255,.28);line-height:.85}
+.cap .tx{flex:1;min-width:280px}
+.cap .tag{font-size:.68rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--red);display:block;margin-bottom:10px}
+.cap h3{font-size:clamp(1.9rem,4.6vw,3.3rem);margin-bottom:14px}
+.cap p{max-width:520px;color:#C6CEDC}
+.cap ul{list-style:none;min-width:min(300px,100%);border-top:1px solid rgba(255,255,255,.22)}
+.cap ul li{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 2px;border-bottom:1px solid rgba(255,255,255,.14);font-size:.92rem;color:#E8ECF3;font-weight:500;transition:.25s}
+.cap ul li:hover{padding-left:10px;color:#fff}
+.cap ul li::after{content:'→';color:var(--red);font-weight:700}
+
+/* planta */
+.planta{position:relative;padding:clamp(80px,12vw,150px) clamp(20px,4vw,50px);text-align:center;isolation:isolate;overflow:hidden}
+.planta::before{content:'';position:absolute;inset:0;background:url('img/planta.jpg') center/cover fixed;z-index:-2}
+@media(hover:none){.planta::before{background-attachment:scroll}}
+.planta::after{content:'';position:absolute;inset:0;background:rgba(11,20,37,.82);z-index:-1}
+.planta blockquote{max-width:900px;margin:0 auto;font-family:var(--fd);font-size:clamp(1.5rem,3.8vw,2.7rem);color:#fff;text-transform:uppercase;line-height:1.15}
+.planta blockquote em{font-style:normal;color:var(--red)}
+.planta .src{margin-top:26px;font-size:.78rem;letter-spacing:3px;text-transform:uppercase;color:var(--steel)}
+
+/* ingeniería */
+.ing{max-width:1200px;margin:0 auto;padding:clamp(70px,10vw,130px) clamp(20px,4vw,50px);display:flex;flex-wrap:wrap;gap:50px 80px;align-items:center}
+.ing .ph{flex:1;min-width:min(420px,100%);border-radius:24px clamp(60px,10vw,160px) 24px 24px;overflow:hidden;position:relative}
+.ing .ph img{transition:transform 1s ease}
+.ing .ph:hover img{transform:scale(1.04)}
+.ing .tx{flex:1;min-width:min(400px,100%)}
+.ing h2{font-size:clamp(1.9rem,4.2vw,3rem);margin-bottom:20px}
+.ing p{margin-bottom:16px}
+.ing .fact{display:flex;gap:18px;align-items:flex-start;margin-top:26px;padding:20px 24px;border-left:3px solid var(--red);background:var(--navy2);border-radius:0 18px 18px 0}
+.ing .fact b{color:#fff}
+.certs{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.certs span{font-size:.74rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#E8ECF3;border:1px solid rgba(255,255,255,.25);border-radius:100px;padding:10px 20px}
+
+/* final */
+.fin{position:relative;margin:0;padding:clamp(90px,13vw,170px) clamp(20px,4vw,50px);text-align:center;background:linear-gradient(140deg,var(--navy3),var(--navy) 60%);border-radius:clamp(60px,12vw,200px) clamp(60px,12vw,200px) 0 0;overflow:hidden}
+.fin::before{content:'';position:absolute;top:-40%;left:50%;transform:translateX(-50%);width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(234,40,45,.16),transparent 65%);pointer-events:none}
+.fin h2{font-size:clamp(2.2rem,6vw,4.4rem);max-width:16ch;margin:0 auto 22px;position:relative}
+.fin p{max-width:520px;margin:0 auto 36px;position:relative}
+.fin .row{display:flex;flex-wrap:wrap;justify-content:center;gap:18px;position:relative}
+footer{padding:40px clamp(20px,4vw,50px);border-top:1px solid rgba(255,255,255,.08);display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px 30px;font-size:.8rem;color:#93A0B7}
+footer b{color:#fff}
+
+/* hilo SVG decorativo */
+.hilo{position:fixed;top:0;right:2vw;height:100vh;z-index:1;pointer-events:none;opacity:.5}
+.hilo path{stroke:var(--red);stroke-width:1.5;fill:none;stroke-dasharray:6 10}
+
+.rev{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
+.rev.in{opacity:1;transform:none}
+@media(max-width:700px){
+  .cap{min-height:72svh}
+  .cue,.hilo{display:none}
+  nav .lg span{display:none}
+}
+</style>
+</head>
+<body>
+
+<svg class="hilo" width="60" height="100%" viewBox="0 0 60 800" preserveAspectRatio="none" aria-hidden="true"><path d="M30 0 Q55 60 30 120 T30 240 T30 360 T30 480 T30 600 T30 720 L30 800"/></svg>
+
+<nav id="nav">
+  <a class="lg" href="#"><img src="img/logo.png" alt="American Screw"><span>American Screw</span></a>
+  <a class="cta" href="#contacto">Cotizar</a>
+</nav>
+
+<header class="hero">
+  <div class="hero-in">
+    <span class="kick">Fabricante chileno · Desde 1949</span>
+    <h1>El acero que <em>sostiene</em> a Chile.</h1>
+    <p>Fabricamos y distribuimos elementos de fijación, refuerzos para hormigón y aceros con normas americanas — de la casa a la minera, del tornillo al edificio completo.</p>
+    <div class="row">
+      <a class="bt" href="#lineas">Ver las 3 líneas</a>
+      <a class="bt o" href="#contacto">Hablar con ingeniería</a>
+    </div>
+  </div>
+  <span class="cue">Desliza</span>
+</header>
+
+<div class="cinta" aria-hidden="true">
+  <div class="track" id="cintatrack">
+    <div class="it"><b>1949</b><span>año de fundación</span><i>·</i></div>
+    <div class="it"><b>26.000 m²</b><span>de planta en Maipú</span><i>·</i></div>
+    <div class="it"><b>3 líneas</b><span>fijaciones · refuerzos · aceros</span><i>·</i></div>
+    <div class="it"><b>Todo Chile</b><span>retail y ferreterías</span><i>·</i></div>
+    <div class="it"><b>Normas ASTM</b><span>calidad certificada</span><i>·</i></div>
+  </div>
+</div>
+
+<section class="caps" id="lineas">
+  <div class="caps-head rev">
+    <span class="kick">Tres líneas, una sola forja</span>
+    <h2>Del alambrón al producto terminado.</h2>
+    <p>Controlamos el proceso completo: recibimos el acero, lo tratamos térmicamente en nuestra propia planta y lo convertimos en soluciones que cumplen norma. Eso es lo que compras cuando compras American Screw.</p>
+  </div>
+
+  <article class="cap rev">
+    <div class="bg" style="background-image:url('img/forja.jpg')"></div>
+    <div class="cap-in">
+      <span class="n">01</span>
+      <div class="tx">
+        <span class="tag">Línea 1</span>
+        <h3>Fijaciones</h3>
+        <p>Desde la instalación doméstica hasta el perno normado para construcción, minería y vialidad. Pernería propia más las líneas Fischer y Flexovit.</p>
+      </div>
+      <ul>
+        <li>Pernería</li>
+        <li>Pernería estructural</li>
+        <li>Pernería minería</li>
+        <li>Pernería vialidad</li>
+        <li>Tornillos punta fina, broca y hexagonales</li>
+        <li>Anclajes Fischer</li>
+        <li>Abrasivos Flexovit</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="cap rev">
+    <div class="bg" style="background-image:url('img/refuerzos.jpg')"></div>
+    <div class="cap-in">
+      <span class="n">02</span>
+      <div class="tx">
+        <span class="tag">Línea 2</span>
+        <h3>Refuerzos para hormigón</h3>
+        <p>Armaduras electrosoldadas de acero AT56 que absorben los esfuerzos donde el hormigón no llega: losas, muros, vigas y albañilería.</p>
+      </div>
+      <ul>
+        <li>Mallas electrosoldadas</li>
+        <li>Pilares electrosoldados</li>
+        <li>Cadenas electrosoldadas</li>
+        <li>Escalerillas ASTEEL</li>
+        <li>Barras AT56-50H</li>
+        <li>Mallas galvanizadas</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="cap rev">
+    <div class="bg" style="background-image:url('img/bobinas.jpg')"></div>
+    <div class="cap-in">
+      <span class="n">03</span>
+      <div class="tx">
+        <span class="tag">Línea 3</span>
+        <h3>Aceros</h3>
+        <p>Bajo, mediano y alto carbono, y aceros aleados: la materia prima de pernos, herramientas y piezas de maquinaria — en barra, plancha o bobina.</p>
+      </div>
+      <ul>
+        <li>Barras redondas</li>
+        <li>Trefilados</li>
+        <li>Planchas A-36 · diamantadas · galvanizadas</li>
+        <li>Bobinas LC · LF · galvanizadas</li>
+      </ul>
+    </div>
+  </article>
+</section>
+
+<section class="planta rev">
+  <blockquote>«26.000 m² en el cordón industrial de Maipú, con planta propia de materias primas y procesos térmicos <em>controlados por nosotros</em>.»</blockquote>
+  <div class="src">Camino a Melipilla 10.338 · Maipú · Santiago</div>
+</section>
+
+<section class="ing" id="ingenieria">
+  <div class="ph rev"><img src="img/ingenieria.jpg" alt="Ingeniería American Screw" loading="lazy"></div>
+  <div class="tx rev">
+    <span class="kick">Ingeniería &amp; calidad</span>
+    <h2>Nada sale de la planta sin cumplir norma.</h2>
+    <p>Nuestro equipo de ingeniería desarrolla productos a pedido y acompaña cada especificación: si tu proyecto necesita un elemento que no existe, lo fabricamos.</p>
+    <p>La calidad está certificada por un organismo externo de trayectoria reconocida, y cada pedido pasa por revisión y embalaje controlado.</p>
+    <div class="fact"><div><b>El detalle que nos delata:</b> cada despacho se verifica comparando el peso real del pedido contra el peso teórico de cada producto. Si no calza, no sale.</div></div>
+    <div class="certs"><span>Normas americanas ASTM</span><span>Certificación externa</span><span>Portal de certificados</span></div>
+  </div>
+</section>
+
+<section class="fin" id="contacto">
+  <h2>77 años sosteniendo proyectos. El tuyo es el que sigue.</h2>
+  <p>Cotiza con nuestro equipo o pide asesoría de ingeniería para tu especificación.</p>
+  <div class="row">
+    <a class="bt" href="tel:+56224407000">(56-2) 2440 7000</a>
+    <a class="bt o" href="mailto:contacto@americanscrew.cl">Escribir a ventas</a>
+  </div>
+</section>
+
+<footer>
+  <span><b>American Screw</b> · Fábrica de pernos y tornillos desde 1949</span>
+  <span>Camino a Melipilla 10.338, Maipú · Chile</span>
+  <span>Propuesta de rediseño · Opción 1 «Forja»</span>
+</footer>
+
+<script>
+var nav=document.getElementById('nav');
+addEventListener('scroll',function(){nav.classList.toggle('sc',scrollY>40)},{passive:true});
+var tr=document.getElementById('cintatrack');tr.innerHTML+=tr.innerHTML;
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.rev').forEach(function(el){io.observe(el)});
+</script>
+</body>
+</html>

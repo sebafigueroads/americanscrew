@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>American Screw · La columna vertebral de la construcción — Opción 3 · Columna</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --navy:#0C1626;--navy2:#13203A;--navy3:#1B2C50;
+  --red:#EA282D;--steel:#93A0B7;--paper:#F2F4F8;--white:#fff;
+  --fd:'Anton',sans-serif;--fb:'Inter Tight',sans-serif;--fm:'JetBrains Mono',monospace;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--fb);background:var(--navy);color:var(--steel);line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--fd);color:#fff;line-height:1;letter-spacing:.01em;text-transform:uppercase;font-weight:400}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+::selection{background:rgba(234,40,45,.4);color:#fff}
+.mono{font-family:var(--fm)}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:14px clamp(20px,4vw,50px);transition:.3s}
+nav.sc{background:rgba(12,22,38,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.07)}
+nav .lg{display:flex;align-items:center;gap:12px}
+nav .lg img{height:44px}
+nav .lg b{color:#fff;font-weight:800;font-size:.95rem}
+nav .cta{font-size:.78rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#fff;background:var(--red);padding:12px 26px;border-radius:100px;transition:.3s}
+nav .cta:hover{background:#fff;color:var(--navy)}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;isolation:isolate;padding:120px clamp(20px,4vw,50px) 0}
+.hero::before{content:'';position:absolute;inset:0;background:url('img/obra.jpg') center/cover;z-index:-2;animation:hz 16s ease-out forwards}
+@keyframes hz{from{transform:scale(1.1)}to{transform:scale(1)}}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,22,38,.6),rgba(12,22,38,.28) 45%,var(--navy) 96%);z-index:-1}
+.hero-in{max-width:1240px;margin:0 auto;width:100%}
+.kick{display:inline-flex;align-items:center;gap:12px;font-family:var(--fm);font-size:.68rem;letter-spacing:3px;text-transform:uppercase;color:#fff;margin-bottom:22px}
+.kick i{width:8px;height:8px;border-radius:50%;background:var(--red);font-style:normal;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(234,40,45,.5)}50%{box-shadow:0 0 0 9px rgba(234,40,45,0)}}
+.hero h1{font-size:clamp(3rem,10.5vw,8.6rem);max-width:12ch}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero .sub{max-width:560px;margin-top:22px;font-size:1.08rem;color:#C9D1DF}
+
+/* buscador hero */
+.finder{max-width:1240px;margin:44px auto 0;background:rgba(19,32,58,.85);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.12);border-radius:26px 26px 0 0;padding:26px clamp(18px,3vw,34px) 22px;box-shadow:0 -20px 60px rgba(0,0,0,.3)}
+.finder .top{display:flex;flex-wrap:wrap;align-items:center;gap:14px}
+.finder .inp{flex:1;min-width:min(300px,100%);position:relative}
+.finder .inp svg{position:absolute;left:18px;top:50%;transform:translateY(-50%);width:17px;height:17px;stroke:var(--steel)}
+.finder input{width:100%;height:54px;border-radius:16px;border:1.5px solid rgba(255,255,255,.15);background:rgba(12,22,38,.7);color:#fff;font-family:var(--fb);font-size:.95rem;padding:0 18px 0 48px;outline:none;transition:.3s}
+.finder input:focus{border-color:var(--red)}
+.finder input::placeholder{color:#6E7A92}
+.finder .count{font-family:var(--fm);font-size:.7rem;letter-spacing:1.5px;text-transform:uppercase;color:#C9D1DF;white-space:nowrap}
+.finder .count b{color:var(--red);font-size:1rem}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
+.chips button{font-family:var(--fb);font-size:.8rem;font-weight:700;letter-spacing:.5px;color:#C9D1DF;background:transparent;border:1.5px solid rgba(255,255,255,.18);border-radius:100px;padding:9px 20px;cursor:pointer;transition:.25s}
+.chips button:hover{border-color:#fff;color:#fff}
+.chips button.on{background:var(--red);border-color:var(--red);color:#fff}
+
+/* catálogo */
+.cat{max-width:1240px;margin:0 auto;padding:26px clamp(20px,4vw,50px) clamp(70px,9vw,110px)}
+.cat .row{display:flex;align-items:baseline;gap:clamp(14px,2.6vw,30px);padding:clamp(18px,2.6vw,26px) 6px;border-bottom:1px solid rgba(255,255,255,.1);cursor:pointer;transition:.28s;position:relative}
+.cat .row:first-child{border-top:2px solid rgba(255,255,255,.25)}
+.cat .row:hover{background:linear-gradient(90deg,rgba(234,40,45,.09),transparent 65%);padding-left:18px}
+.cat .row .n{font-family:var(--fm);font-size:.68rem;color:var(--red);font-weight:700;min-width:44px}
+.cat .row h3{font-size:clamp(1.25rem,3.2vw,2.1rem);color:#E9EDF4;flex:1;transition:.28s}
+.cat .row:hover h3{color:#fff}
+.cat .row .ln{font-family:var(--fm);font-size:.62rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--steel);border:1px solid rgba(255,255,255,.18);border-radius:100px;padding:6px 14px;white-space:nowrap}
+.cat .row .ap{font-size:.8rem;color:var(--steel);max-width:230px;text-align:right}
+.cat .row.hide{display:none}
+.cat .empty{display:none;padding:50px 6px;text-align:center;font-size:.95rem}
+.cat .empty.show{display:block}
+
+/* planta band */
+.band{position:relative;min-height:70svh;display:flex;align-items:center;isolation:isolate;overflow:hidden;border-radius:0 clamp(70px,14vw,220px) 0 0}
+.band::before{content:'';position:absolute;inset:0;background:url('img/planta.jpg') center/cover;z-index:-2}
+.band::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,22,38,.92) 20%,rgba(12,22,38,.35));z-index:-1}
+.band-in{max-width:1240px;margin:0 auto;width:100%;padding:clamp(60px,8vw,90px) clamp(20px,4vw,50px)}
+.band h2{font-size:clamp(2.2rem,6vw,4.4rem);max-width:14ch}
+.band p{max-width:480px;margin-top:18px;color:#C9D1DF}
+.band .stats{display:flex;flex-wrap:wrap;gap:16px 46px;margin-top:34px}
+.band .st b{font-family:var(--fd);font-size:clamp(1.8rem,4vw,2.8rem);color:#fff;display:block}
+.band .st span{font-family:var(--fm);font-size:.64rem;letter-spacing:2px;text-transform:uppercase;color:var(--steel)}
+
+/* chile */
+.chile{max-width:1240px;margin:0 auto;padding:clamp(80px,11vw,140px) clamp(20px,4vw,50px);display:flex;flex-wrap:wrap;gap:50px 90px;align-items:center}
+.chile .tx{flex:1.2;min-width:min(420px,100%)}
+.chile h2{font-size:clamp(2rem,5vw,3.6rem);margin-bottom:18px}
+.chile p{max-width:520px;margin-bottom:14px}
+.chile .map{flex:.8;min-width:240px;display:flex;justify-content:center}
+.chile svg{height:min(520px,68vh)}
+.chile .ruta{stroke:rgba(255,255,255,.22);stroke-width:2;fill:none}
+.chile .ruta2{stroke:var(--red);stroke-width:2.5;fill:none;stroke-dasharray:1000;stroke-dashoffset:1000}
+.chile.in .ruta2{animation:ruta 3.2s .3s ease forwards}
+@keyframes ruta{to{stroke-dashoffset:0}}
+.chile .pt{fill:#fff}
+.chile .pt2{fill:var(--red);animation:pulse 2.4s infinite}
+.chile text{font-family:var(--fm);font-size:10.5px;letter-spacing:1.5px;fill:var(--steel);text-transform:uppercase}
+.canales{display:flex;flex-direction:column;gap:0;margin-top:26px;border-top:1px solid rgba(255,255,255,.14)}
+.canales .c{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:15px 4px;border-bottom:1px solid rgba(255,255,255,.1);font-weight:600;color:#E9EDF4}
+.canales .c span{font-family:var(--fm);font-size:.64rem;letter-spacing:1.5px;color:var(--steel);text-transform:uppercase}
+
+/* ingeniería + certificados */
+.ing{background:var(--paper);color:#3A465F;border-radius:clamp(60px,12vw,190px) 0 0 0;padding:clamp(80px,11vw,140px) clamp(20px,4vw,50px)}
+.ing-in{max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;gap:50px 80px;align-items:center}
+.ing .ph{flex:1;min-width:min(400px,100%);border-radius:24px 24px clamp(70px,10vw,150px) 24px;overflow:hidden;box-shadow:0 30px 70px rgba(12,22,38,.3)}
+.ing .tx{flex:1;min-width:min(400px,100%)}
+.ing h2{color:#16233F;font-size:clamp(2rem,4.8vw,3.4rem);margin-bottom:18px}
+.ing p{margin-bottom:14px}
+.ing .portal{display:inline-flex;align-items:center;gap:14px;margin-top:20px;background:#fff;border:1px solid rgba(22,35,63,.14);border-radius:18px;padding:18px 24px;font-weight:700;color:#16233F;box-shadow:0 14px 40px rgba(12,22,38,.12);transition:.3s}
+.ing .portal:hover{transform:translateY(-3px);box-shadow:0 22px 50px rgba(12,22,38,.18)}
+.ing .portal i{font-style:normal;width:38px;height:38px;border-radius:12px;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800}
+
+/* cierre */
+.fin{position:relative;padding:clamp(90px,13vw,170px) clamp(20px,4vw,50px);text-align:center;isolation:isolate;overflow:hidden}
+.fin::before{content:'';position:absolute;inset:0;background:url('img/hero-perno.jpg') center/cover;z-index:-2}
+.fin::after{content:'';position:absolute;inset:0;background:rgba(12,22,38,.88);z-index:-1}
+.fin h2{font-size:clamp(2.4rem,7vw,5.4rem);max-width:14ch;margin:0 auto 20px}
+.fin h2 em{font-style:normal;color:var(--red)}
+.fin p{max-width:500px;margin:0 auto 36px;color:#C9D1DF}
+.bt{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:.88rem;letter-spacing:1px;text-transform:uppercase;color:#fff;background:var(--red);padding:17px 36px;border-radius:100px;transition:.3s}
+.bt:hover{transform:translateY(-2px);box-shadow:0 16px 44px rgba(234,40,45,.45)}
+.bt.o{background:transparent;border:2px solid rgba(255,255,255,.4)}
+.bt.o:hover{border-color:#fff;box-shadow:none}
+.fin .row{display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
+footer{padding:36px clamp(20px,4vw,50px);border-top:1px solid rgba(255,255,255,.08);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 30px;font-family:var(--fm);font-size:.66rem;letter-spacing:.5px;color:#6E7A92;text-transform:uppercase}
+
+.rev{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
+.rev.in{opacity:1;transform:none}
+@media(max-width:760px){
+  .cat .row{flex-wrap:wrap;gap:8px 14px}
+  .cat .row .ap{display:none}
+  nav .lg b{display:none}
+}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a class="lg" href="#"><img src="img/logo.png" alt="American Screw"><b>American Screw</b></a>
+  <a class="cta" href="#contacto">Cotizar ahora</a>
+</nav>
+
+<header class="hero">
+  <div class="hero-in">
+    <span class="kick"><i></i>Fabricando en Chile desde 1949</span>
+    <h1>La columna <em>vertebral</em> de la construcción.</h1>
+    <p class="sub">17 familias de productos en acero — fijaciones, refuerzos y aceros — con norma americana, stock real y despacho a todo Chile.</p>
+  </div>
+  <div class="finder rev">
+    <div class="top">
+      <div class="inp">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input id="q" type="search" placeholder="Busca en el catálogo: perno, malla, plancha A-36, fischer…" autocomplete="off">
+      </div>
+      <div class="count"><b id="cnum">17</b> PRODUCTOS</div>
+    </div>
+    <div class="chips" id="chips">
+      <button class="on" data-f="all">Todas las líneas</button>
+      <button data-f="fijaciones">Fijaciones</button>
+      <button data-f="refuerzos">Refuerzos hormigón</button>
+      <button data-f="aceros">Aceros</button>
+    </div>
+  </div>
+</header>
+
+<section class="cat" id="catalogo">
+  <div id="rows">
+    <div class="row" data-l="fijaciones" data-s="perneria pernos tuercas uso general sujecion"><span class="n">F·01</span><h3>Pernería</h3><span class="ap">La gama completa de uso general, de la casa a la industria</span><span class="ln">Fijaciones</span></div>
+    <div class="row" data-l="fijaciones" data-s="perneria estructural construccion normada astm"><span class="n">F·02</span><h3>Pernería estructural</h3><span class="ap">Elementos normados para estructuras de acero</span><span class="ln">Fijaciones</span></div>
+    <div class="row" data-l="fijaciones" data-s="perneria mineria faena mina"><span class="n">F·03</span><h3>Pernería minería</h3><span class="ap">Desarrollos específicos para uso normativo en faenas</span><span class="ln">Fijaciones</span></div>
+    <div class="row" data-l="fijaciones" data-s="perneria vialidad obras publicas caminos"><span class="n">F·04</span><h3>Pernería vialidad</h3><span class="ap">Fijaciones para infraestructura vial</span><span class="ln">Fijaciones</span></div>
+    <div class="row" data-l="fijaciones" data-s="tornillos punta fina broca hexagonal perfil metalico volcanita paneles"><span class="n">F·05</span><h3>Tornillos punta fina · broca · hexagonal</h3><span class="ap">Perfiles metálicos hasta 5,3 mm y paneles</span><span class="ln">Fijaciones</span></div>
+    <div class="row" data-l="fijaciones" data-s="anclajes fischer alemania hogar profesional tacos"><span class="n">F·06</span><h3>Anclajes Fischer</h3><span class="ap">Especialización alemana, del hogar al alto estándar</span><span class="ln">Fijaciones</span></div>
+    <div class="row" data-l="fijaciones" data-s="discos abrasivos flexovit corte desbaste acero inoxidable"><span class="n">F·07</span><h3>Discos abrasivos Flexovit</h3><span class="ap">Corte y desbaste multipropósito, acero e inoxidable</span><span class="ln">Fijaciones</span></div>
+    <div class="row" data-l="refuerzos" data-s="mallas electrosoldadas at56 hormigon losas"><span class="n">R·01</span><h3>Mallas electrosoldadas</h3><span class="ap">Acero AT56 soldado por resistencia en cada nudo</span><span class="ln">Refuerzos</span></div>
+    <div class="row" data-l="refuerzos" data-s="pilares electrosoldados armadura estructura"><span class="n">R·02</span><h3>Pilares electrosoldados</h3><span class="ap">Armaduras listas para elevación de estructura</span><span class="ln">Refuerzos</span></div>
+    <div class="row" data-l="refuerzos" data-s="cadenas electrosoldadas armadura muros"><span class="n">R·03</span><h3>Cadenas electrosoldadas</h3><span class="ap">Amarres horizontales de muros y albañilería</span><span class="ln">Refuerzos</span></div>
+    <div class="row" data-l="refuerzos" data-s="escalerillas asteel albañileria refuerzo horizontal tension"><span class="n">R·04</span><h3>Escalerillas ASTEEL</h3><span class="ap">Refuerzo horizontal que absorbe corte y tracción</span><span class="ln">Refuerzos</span></div>
+    <div class="row" data-l="refuerzos" data-s="barras at56 50h losas vigas cadenas empalmes 6 metros"><span class="n">R·05</span><h3>Barras AT56-50H</h3><span class="ap">Complemento de armado en largos de 6 metros</span><span class="ln">Refuerzos</span></div>
+    <div class="row" data-l="refuerzos" data-s="mallas galvanizadas zinc corrosion"><span class="n">R·06</span><h3>Mallas galvanizadas</h3><span class="ap">Capa de zinc para ambientes agresivos</span><span class="ln">Refuerzos</span></div>
+    <div class="row" data-l="aceros" data-s="barras redondas carbono aleados maquinaria"><span class="n">A·01</span><h3>Barras redondas</h3><span class="ap">Bajo, mediano y alto carbono, y aleados</span><span class="ln">Aceros</span></div>
+    <div class="row" data-l="aceros" data-s="trefilados rollos laminado calibrado"><span class="n">A·02</span><h3>Trefilados</h3><span class="ap">Sección reducida desde laminado, en rollos</span><span class="ln">Aceros</span></div>
+    <div class="row" data-l="aceros" data-s="planchas a-36 astm diamantadas galvanizadas frio caliente gruesas"><span class="n">A·03</span><h3>Planchas A-36 · diamantadas · galvanizadas</h3><span class="ap">Laminadas en frío y caliente, también gruesas</span><span class="ln">Aceros</span></div>
+    <div class="row" data-l="aceros" data-s="bobinas laminado caliente frio galvanizadas anchos"><span class="n">A·04</span><h3>Bobinas LC · LF · galvanizadas</h3><span class="ap">Anchos de 1 m, 1,2 m y 1,5 m</span><span class="ln">Aceros</span></div>
+  </div>
+  <div class="empty" id="empty">Nada calza con esa búsqueda — prueba «perno», «malla» o «plancha», o <a href="#contacto" style="color:var(--red);font-weight:700">pídenos el desarrollo a medida →</a></div>
+</section>
+
+<section class="band rev">
+  <div class="band-in">
+    <span class="kick"><i></i>Servicio integral</span>
+    <h2>Planta propia. Proceso propio. Palabra propia.</h2>
+    <p>En el cordón industrial de Camino a Melipilla tratamos térmicamente nuestras materias primas para obtener el acero óptimo de cada producto — y respondemos por el resultado.</p>
+    <div class="stats">
+      <div class="st"><b>26.000</b><span>m² de planta</span></div>
+      <div class="st"><b>1949</b><span>fundación</span></div>
+      <div class="st"><b>77</b><span>años fabricando</span></div>
+      <div class="st"><b>ASTM</b><span>norma americana</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="chile rev" id="red">
+  <div class="tx">
+    <span class="kick"><i></i>Red de distribución</span>
+    <h2>Un solo estándar, de Arica a Magallanes.</h2>
+    <p>Presencia en las más grandes cadenas del retail y en una amplia red de ferreterías y distribuidores a lo largo de todo el territorio nacional.</p>
+    <div class="canales">
+      <div class="c">Grandes cadenas retail<span>Nacional</span></div>
+      <div class="c">Ferreterías y distribuidores<span>Regional</span></div>
+      <div class="c">Venta directa a proyectos<span>Construcción · Minería</span></div>
+    </div>
+  </div>
+  <div class="map">
+    <svg viewBox="0 0 120 560" aria-hidden="true">
+      <path class="ruta" d="M62 18 C 54 90, 70 150, 60 220 C 50 290, 72 350, 58 420 C 50 470, 66 510, 58 545"/>
+      <path class="ruta2" d="M62 18 C 54 90, 70 150, 60 220 C 50 290, 72 350, 58 420 C 50 470, 66 510, 58 545"/>
+      <circle class="pt" cx="62" cy="18" r="4"/><text x="74" y="22">Arica</text>
+      <circle class="pt" cx="63" cy="120" r="4"/><text x="75" y="124">Antofagasta</text>
+      <circle class="pt2" cx="60" cy="250" r="6"/><text x="74" y="246">Santiago</text><text x="74" y="260" fill="#EA282D">Planta Maipú</text>
+      <circle class="pt" cx="62" cy="360" r="4"/><text x="76" y="364">Concepción</text>
+      <circle class="pt" cx="60" cy="450" r="4"/><text x="74" y="454">Puerto Montt</text>
+      <circle class="pt" cx="58" cy="545" r="4"/><text x="72" y="549">Punta Arenas</text>
+    </svg>
+  </div>
+</section>
+
+<section class="ing">
+  <div class="ing-in">
+    <div class="ph rev"><img src="img/ingenieria.jpg" alt="Ingeniería American Screw" loading="lazy"></div>
+    <div class="tx rev">
+      <span class="kick" style="color:#EA282D"><i></i>Ingeniería · I+D · Calidad</span>
+      <h2>¿No existe? Lo fabricamos.</h2>
+      <p>Nuestro equipo de ingeniería desarrolla elementos a pedido para usos normativos en construcción y minería, y acompaña cada especificación con soporte técnico real.</p>
+      <p>Cada despacho se controla comparando el <b>peso real contra el peso teórico</b> del pedido, y la calidad está certificada por un organismo externo. Tus certificados quedan siempre disponibles en línea.</p>
+      <a class="portal" href="#"><i>↓</i> Portal de certificados</a>
+    </div>
+  </div>
+</section>
+
+<section class="fin" id="contacto">
+  <h2>Especifica <em>American Screw</em>.</h2>
+  <p>Cotiza con el equipo comercial o conversa directo con ingeniería sobre tu proyecto.</p>
+  <div class="row">
+    <a class="bt" href="tel:+56224407000">(56-2) 2440 7000</a>
+    <a class="bt o" href="mailto:contacto@americanscrew.cl">Escribir a ventas</a>
+  </div>
+</section>
+
+<footer>
+  <span>American Screw · Camino a Melipilla 10.338, Maipú</span>
+  <span>Propuesta de rediseño · Opción 3 «Columna»</span>
+</footer>
+
+<script>
+var nav=document.getElementById('nav');
+addEventListener('scroll',function(){nav.classList.toggle('sc',scrollY>40)},{passive:true});
+
+/* catálogo */
+var rows=[].slice.call(document.querySelectorAll('.cat .row')),
+    q=document.getElementById('q'),cnum=document.getElementById('cnum'),
+    empty=document.getElementById('empty'),filtro='all';
+function apply(){
+  var t=q.value.trim().toLowerCase(),n=0;
+  rows.forEach(function(r){
+    var okF=filtro==='all'||r.getAttribute('data-l')===filtro;
+    var okQ=!t||(r.textContent+' '+r.getAttribute('data-s')).toLowerCase().indexOf(t)>-1;
+    var ok=okF&&okQ;r.classList.toggle('hide',!ok);if(ok)n++;
+  });
+  cnum.textContent=n;empty.classList.toggle('show',n===0);
+}
+q.addEventListener('input',apply);
+document.getElementById('chips').addEventListener('click',function(e){
+  var b=e.target.closest('button');if(!b)return;
+  document.querySelectorAll('#chips button').forEach(function(x){x.classList.remove('on')});
+  b.classList.add('on');filtro=b.getAttribute('data-f');apply();
+});
+rows.forEach(function(r){r.addEventListener('click',function(){location.href='#contacto'})});
+
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.rev,.chile').forEach(function(el){io.observe(el)});
+</script>
+</body>
+</html>

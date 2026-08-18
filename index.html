@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>American Screw · 3 propuestas de rediseño web</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--navy:#0C1626;--navy2:#13203A;--red:#EA282D;--steel:#93A0B7}
+body{font-family:'Inter Tight',sans-serif;background:var(--navy);color:var(--steel);min-height:100vh;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:60px clamp(20px,4vw,50px) 80px}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:20px 30px;margin-bottom:clamp(40px,7vw,70px)}
+header img{height:64px}
+header h1{color:#fff;font-size:clamp(1.5rem,3.6vw,2.3rem);font-weight:800;letter-spacing:-.02em;line-height:1.15}
+header p{width:100%;max-width:640px;font-size:.98rem}
+header .tag{font-family:'JetBrains Mono',monospace;font-size:.64rem;letter-spacing:2.5px;color:var(--red);text-transform:uppercase;width:100%}
+.ops{display:flex;flex-direction:column;gap:26px}
+.op{position:relative;display:flex;flex-wrap:wrap;align-items:flex-end;min-height:340px;border-radius:28px;overflow:hidden;isolation:isolate;border:1px solid rgba(255,255,255,.1);transition:.4s}
+.op::before{content:'';position:absolute;inset:0;background-image:var(--bg);background-size:cover;background-position:center;z-index:-2;transition:transform .8s ease}
+.op::after{content:'';position:absolute;inset:0;background:linear-gradient(100deg,rgba(12,22,38,.92) 30%,rgba(12,22,38,.3));z-index:-1;transition:.4s}
+.op:hover{transform:translateY(-4px);border-color:rgba(234,40,45,.5);box-shadow:0 30px 70px rgba(0,0,0,.45)}
+.op:hover::before{transform:scale(1.04)}
+.op .in{padding:clamp(26px,4vw,44px);max-width:640px}
+.op .n{font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:2.5px;color:var(--red);text-transform:uppercase;display:block;margin-bottom:10px}
+.op h2{color:#fff;font-size:clamp(1.7rem,4.4vw,2.8rem);font-weight:800;letter-spacing:-.02em;line-height:1.05;margin-bottom:12px}
+.op p{font-size:.95rem;max-width:520px;margin-bottom:18px}
+.op .go{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:.84rem;letter-spacing:1px;text-transform:uppercase;color:#fff;background:var(--red);border-radius:100px;padding:13px 28px;transition:.3s}
+.op:hover .go{gap:16px}
+footer{margin-top:60px;padding-top:26px;border-top:1px solid rgba(255,255,255,.09);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 30px;font-family:'JetBrains Mono',monospace;font-size:.64rem;letter-spacing:1px;color:#6E7A92;text-transform:uppercase}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="img/logo.png" alt="American Screw">
+    <h1>Rediseño web American Screw<br>· 3 propuestas</h1>
+    <span class="tag">Digitals · dirección de arte web · agosto 2026</span>
+    <p>Tres caminos distintos para llevar 77 años de fabricación en acero a un sitio que se sienta tan sólido como el producto. Las tres usan fotografía generada a medida, la paleta original de la marca (navy · rojo · acero) y contenido real del sitio actual.</p>
+  </header>
+
+  <div class="ops">
+    <a class="op" href="opcion-1.html" style="--bg:url('img/hero-perno.jpg')">
+      <div class="in">
+        <span class="n">Opción 01</span>
+        <h2>«Forja» — cine industrial oscuro</h2>
+        <p>Inmersiva y cinematográfica: macro del perno a pantalla completa, capítulos full-bleed con esquinas orgánicas para las 3 líneas, cinta de hitos en movimiento y la planta como manifiesto. La marca como peso pesado.</p>
+        <span class="go">Ver opción 1 →</span>
+      </div>
+    </a>
+    <a class="op" href="opcion-2.html" style="--bg:url('img/ingenieria.jpg')">
+      <div class="in">
+        <span class="n">Opción 02</span>
+        <h2>«Norma» — editorial de ingeniería</h2>
+        <p>Clara y precisa como un plano técnico: tipografía gigante en navy, índice expandible de las 3 líneas con nomenclatura (F·01, R·05…), sello giratorio “desde 1949”, cotas y monoespaciada. La precisión hecha diseño.</p>
+        <span class="go">Ver opción 2 →</span>
+      </div>
+    </a>
+    <a class="op" href="opcion-3.html" style="--bg:url('img/obra.jpg')">
+      <div class="in">
+        <span class="n">Opción 03</span>
+        <h2>«Columna» — portal con catálogo vivo</h2>
+        <p>Imponente y funcional: hero de obra al atardecer con buscador integrado, catálogo filtrable de 17 familias (buscador + líneas + contador en vivo), mapa de Chile animado y portal de certificados. Para el que viene a especificar.</p>
+        <span class="go">Ver opción 3 →</span>
+      </div>
+    </a>
+  </div>
+
+  <footer>
+    <span>Propuestas confidenciales · no indexadas</span>
+    <span>americanscrew.cl · digitals.cl</span>
+  </footer>
+</div>
+</body>
+</html>
